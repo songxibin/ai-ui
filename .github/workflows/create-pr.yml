@@ -26,7 +26,7 @@ jobs:
           # https://docs.github.com/en/actions/security-guides/automatic-token-authentication
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          WHITELIST: ${{ secrets.WHITELIST }}
+          WHITELIST: songxibin
           CONFIG: ${{ vars.CONFIG }}
           ACTOR: ${{ github.actor }}
         run: deno run -A prompts/entry.ts
